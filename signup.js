@@ -1,19 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const signupForm = document.getElementById("signupForm");
+  const loginForm = document.getElementById("loginForm");
 
-  if (signupForm) {
-    signupForm.addEventListener("submit", function (e) {
+  if (loginForm) {
+    loginForm.addEventListener("submit", function (e) {
       e.preventDefault();
-
-      // Normally you'd send this to Firebase or a backend
 
       Swal.fire({
         icon: 'success',
-        title: 'Signup Successful',
-        text: 'Redirecting to login...',
+        title: 'Login Successful',
+        text: 'Redirecting to dashboard...',
         confirmButtonText: 'OK'
       }).then(() => {
-        window.location.href = 'login.html';
+        window.location.href = 'dashboard.html';
       });
     });
   }

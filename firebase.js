@@ -59,9 +59,9 @@ if (document.querySelector("#lbtn")) {
 
 try {
   const docRef = await addDoc(collection(db, "users"), {
-    first: "Ada",
-    last: "Lovelace",
-    born: 1815
+    name: "John Doe",
+    email: ""
+    
   });
   console.log("Document written with ID: ", docRef.id);
 } catch (e) {
